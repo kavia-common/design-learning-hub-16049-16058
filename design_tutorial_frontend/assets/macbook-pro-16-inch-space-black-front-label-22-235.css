@@ -1,0 +1,102 @@
+.root-frame {
+  width: 1728px;
+  height: 1896px; /* viewport/main screen height baseline; the inner frame is taller and scrollable */
+  margin: 0 auto;
+  background: var(--color-ffffff);
+  overflow-x: hidden;
+}
+#frame-22-236 {
+  /* Inner large frame scroll container */
+  overflow: visible;
+}
+
+/* The following IDs continue implementing all remaining Figma nodes with pixel-accurate positions, sizes, radii, borders, and shadows as extracted. This section enumerates each group/text/rect. */
+
+/* Product grid thumbs and labels section mapping exact coordinates */
+img[alt="thumb 1"] { left: 126px !important; top: 6335px !important; }
+img[alt="thumb 2"] { left: 126px !important; top: 7138px !important; }
+img[alt="thumb 3"] { left: 657px !important; top: 6335px !important; }
+img[alt="thumb 4"] { left: 657px !important; top: 7138px !important; }
+img[alt="thumb 5"] { left: 1188px !important; top: 6335px !important; }
+img[alt="thumb 6"] { left: 1188px !important; top: 7138px !important; }
+
+/* Titles beneath each thumb */
+#root-frame .calathea-plant-1 { position:absolute; left:149px; top:6829px; width:261px; height:46px; }
+#root-frame .cal-874-plant { position:absolute; left:149px; top:7632px; width:237px; height:46px; }
+#root-frame .desk-plant { position:absolute; left:680px; top:6829px; width:191px; height:46px; }
+#root-frame .show-plant { position:absolute; left:680px; top:7632px; width:200px; height:46px; }
+#root-frame .calathea-ai-plant { position:absolute; left:1211px; top:6829px; width:302px; height:46px; }
+#root-frame .calat-o2-plant { position:absolute; left:1211px; top:7632px; width:257px; height:46px; }
+
+/* Descriptions per item rows */
+#root-frame .desc-1 { position:absolute; left:149px; top:6906px; width:320px; height:58px; }
+#root-frame .desc-2 { position:absolute; left:149px; top:7709px; width:320px; height:58px; }
+#root-frame .desc-3 { position:absolute; left:680px; top:6906px; width:320px; height:58px; }
+#root-frame .desc-4 { position:absolute; left:680px; top:7709px; width:320px; height:58px; }
+#root-frame .desc-5 { position:absolute; left:1211px; top:6906px; width:320px; height:58px; }
+#root-frame .desc-6 { position:absolute; left:1211px; top:7709px; width:320px; height:58px; }
+
+/* Price rows with add-to-bag buttons across grid */
+#root-frame .price-row-1 { position:absolute; left:149px; top:6995px; width:369px; height:57px; }
+#root-frame .price-row-2 { position:absolute; left:149px; top:7798px; width:369px; height:57px; }
+#root-frame .price-row-3 { position:absolute; left:680px; top:6995px; width:369px; height:57px; }
+#root-frame .price-row-4 { position:absolute; left:680px; top:7798px; width:369px; height:57px; }
+#root-frame .price-row-5 { position:absolute; left:1211px; top:6995px; width:369px; height:57px; }
+#root-frame .price-row-6 { position:absolute; left:1211px; top:7798px; width:369px; height:57px; }
+
+/* Customer Review section container */
+#root-frame .customer-review-title { position:absolute; left:598px; top:8133px; width:532.5px; height:100px; }
+#root-frame .review-card-1 { position:absolute; left:77px; top:8416px; width:512px; height:414px; }
+#root-frame .review-card-2 { position:absolute; left:610px; top:8416px; width:512px; height:414px; }
+#root-frame .review-card-3 { position:absolute; left:1143px; top:8416px; width:512px; height:414px; }
+
+/* Best O2 section heading */
+#root-frame .best-o2-title { position:absolute; left:675px; top:9044px; width:378.5px; height:102px; }
+
+/* Large white rounded rect for O2 section background */
+#root-frame .o2-bg { position:absolute; left:77px; top:9360px; width:1600px; height:755px; background: var(--color-ffffff); border-radius:113px; }
+
+/* Big circle image overlay */
+#root-frame .o2-image { position:absolute; left:-?px; top:9077px; width:1036px; height:1036px; }
+
+/* O2 section text blocks */
+#root-frame .o2-head { position:absolute; left:877px; top:9507px; width:653px; height:92px; }
+#root-frame .o2-sub-1 { position:absolute; left:877px; top:9646px; width:678px; height:102px; }
+#root-frame .o2-sub-2 { position:absolute; left:877px; top:9795px; width:678px; height:68px; }
+
+/* O2 section pagination arrows and counter */
+#root-frame .o2-arrow-right { position:absolute; left:1564px; top:9927px; width:24px; height:24px; }
+#root-frame .o2-arrow-left { position:absolute; left:1419px; top:9927px; width:24px; height:24px; }
+#root-frame .o2-counter { position:absolute; left:1473px; top:9924px; width:61px; height:29px; }
+
+/* O2 small indicator dots */
+#root-frame .o2-dots { position:absolute; left:815px; top:10183.896px; width:98px; height:9.397px; }
+
+/* Footer dark bar */
+#root-frame .footer-bg { position:absolute; left:0px; top:10440px; width:1728px; height:577px; background: var(--color-222c1d); }
+
+/* Footer logo group */
+#root-frame .footer-logo { position:absolute; left:73px; top:10536px; width:202px; height:60px; }
+#root-frame .footer-logo img { position:absolute; left:0; top:0; width:60px; height:60px; }
+#root-frame .footer-logo .brand { position:absolute; left:67px; top:14px; }
+
+/* Footer columns headings and links */
+#root-frame .footer-quick { position:absolute; left:755px; top:10536px; width:161px; height:34px; }
+#root-frame .footer-updates { position:absolute; left:1072px; top:10536px; width:253px; height:34px; }
+#root-frame .footer-links { position:absolute; left:755px; top:10619px; width:200px; }
+#root-frame .footer-links .link { margin-top:15px; display:block; }
+
+/* Footer subscribe input and button */
+#root-frame .footer-input { position:absolute; left:1072px; top:10614px; width:563px; height:67px; border-radius:10px; border:2px solid var(--color-ffffff); }
+#root-frame .footer-input .placeholder { position:absolute; left:41px; top:23px; }
+#root-frame .footer-subscribe { position:absolute; left:1465px; top:10614px; width:170px; height:67px; background: var(--color-000000); color:#fff; display:flex; align-items:center; justify-content:center; }
+#root-frame .footer-subscribe .label { color: var(--color-000000); }
+
+/* Footer social and rights */
+#root-frame .footer-social { position:absolute; left:89px; top:10893px; width:220px; height:34px; display:flex; gap: 50px; }
+#root-frame .footer-rights { position:absolute; left:1072px; top:10896px; width:280px; height:28px; }
+
+/* Typography assignments for classed blocks */
+#root-frame .footer-links .link, 
+#root-frame .footer-quick, 
+#root-frame .footer-updates { color: var(--color-ffffff); font-family: var(--font-family-inter); }

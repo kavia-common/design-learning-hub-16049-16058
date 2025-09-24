@@ -1,0 +1,171 @@
+:root {
+  /* Colors from design system */
+  --color-1b2316: #1b2316;
+  --color-ffffff: #ffffff;
+  --color-fff84e: #fff84e;
+  --color-222c1d: #222c1d;
+  --color-000000: #000000;
+  --color-171f12: #171f12;
+
+  /* Typography (base family) */
+  --font-family-inter: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+
+  /* Useful z-index layers */
+  --z-base: 1;
+  --z-overlay: 10;
+  --z-modal: 100;
+}
+
+/* Helper classes */
+.abs { position: absolute; }
+.block { position: relative; display: block; }
+.flex { display: flex; }
+.center { display: flex; align-items: center; justify-content: center; }
+
+/* Map Figma styles to CSS tokens */
+.bg-color-1b2316 { background-color: var(--color-1b2316); }
+.bg-color-ffffff { background-color: var(--color-ffffff); }
+.bg-color-fff84e { background-color: var(--color-fff84e); }
+.bg-color-222c1d { background-color: var(--color-222c1d); }
+.bg-color-000000 { background-color: var(--color-000000); }
+.bg-color-171f12 { background-color: var(--color-171f12); }
+
+/* Border radius tokens (from border_radius list) */
+.br-3 { border-radius: 3px; }
+.br-7 { border-radius: 7px; }
+.br-8 { border-radius: 8px; }
+.br-9 { border-radius: 9px; }
+.br-10 { border-radius: 10px; }
+.br-12 { border-radius: 12px; }
+.br-13 { border-radius: 13px; }
+.br-14 { border-radius: 14px; }
+.br-15 { border-radius: 15px; }
+.br-19 { border-radius: 19px; }
+.br-20 { border-radius: 20px; }
+.br-23 { border-radius: 23px; }
+.br-42 { border-radius: 42px; }
+.br-45 { border-radius: 45px; }
+.br-46 { border-radius: 46px; }
+.br-48 { border-radius: 48px; }
+.br-51 { border-radius: 51px; }
+.br-52 { border-radius: 52px; }
+.br-77 { border-radius: 77px; }
+.br-84 { border-radius: 84px; }
+.br-86 { border-radius: 86px; }
+.br-92 { border-radius: 92px; }
+.br-113 { border-radius: 113px; }
+.br-151 { border-radius: 151px; }
+
+/* Shadows mapped from design system: create utilities shadow-[id] */
+.shadow-1 { box-shadow: 0px 9px 18.4px 0px rgba(0,0,0,1); }
+.shadow-2 { box-shadow: 0px 2.3172204494px 1.8537764549px 0px rgba(0,0,0,1); }
+.shadow-3 { box-shadow: 0px 5.3877191544px 4.3101754189px 0px rgba(0,0,0,1); }
+.shadow-4 { box-shadow: 0px 9.6750946045px 7.7400760651px 0px rgba(0,0,0,1); }
+.shadow-5 { box-shadow: 0px 16.0570735931px 12.845659256px 0px rgba(0,0,0,1); }
+.shadow-6 { box-shadow: 0px 26.4534893036px 21.1627902985px 0px rgba(0,0,0,1); }
+.shadow-7 { box-shadow: 0px 46.2330322266px 36.9864234924px 0px rgba(0,0,0,1); }
+.shadow-8 { box-shadow: 0px 100px 80px 0px rgba(0,0,0,1); }
+.shadow-9 { box-shadow: 0px 1.9932421446px 1.5945937634px 0px rgba(0,0,0,1); }
+.shadow-10 { box-shadow: 0px 4.5288000107px 3.6230399609px 0px rgba(0,0,0,1); }
+.shadow-11 { box-shadow: 0px 7.8821754456px 6.3057403564px 0px rgba(0,0,0,1); }
+.shadow-12 { box-shadow: 0px 12.5215520859px 10.017241478px 0px rgba(0,0,0,1); }
+.shadow-13 { box-shadow: 0px 19.3198242188px 15.4558591843px 0px rgba(0,0,0,1); }
+.shadow-14 { box-shadow: 0px 30.1470737457px 24.1176586151px 0px rgba(0,0,0,1); }
+.shadow-15 { box-shadow: 0px 50.048828125px 40.0390625px 0px rgba(0,0,0,1); }
+.shadow-16 { box-shadow: 0px -0.1793918014px 1.5945937634px 0px rgba(0,0,0,1); }
+.shadow-17 { box-shadow: 0px -0.407591999px 3.6230399609px 0px rgba(0,0,0,1); }
+.shadow-18 { box-shadow: 0px -0.7093957663px 6.3057403564px 0px rgba(0,0,0,1); }
+.shadow-19 { box-shadow: 0px -1.1269396544px 10.017241478px 0px rgba(0,0,0,1); }
+.shadow-20 { box-shadow: 0px -1.738784194px 15.4558591843px 0px rgba(0,0,0,1); }
+.shadow-21 { box-shadow: 0px -2.7132365704px 24.1176586151px 0px rgba(0,0,0,1); }
+.shadow-22 { box-shadow: 0px -4.5043945313px 40.0390625px 0px rgba(0,0,0,1); }
+.shadow-23 { box-shadow: 0px -9px 80px 0px rgba(0,0,0,1); }
+.shadow-24 { box-shadow: 0px 0.5381754041px 1.5945937634px 0px rgba(0,0,0,1); }
+.shadow-25 { box-shadow: 0px 1.2227759361px 3.6230399609px 0px rgba(0,0,0,1); }
+.shadow-26 { box-shadow: 0px 2.128187418px 6.3057403564px 0px rgba(0,0,0,1); }
+.shadow-27 { box-shadow: 0px 3.3808190823px 10.017241478px 0px rgba(0,0,0,1); }
+.shadow-28 { box-shadow: 0px 5.2163524628px 15.4558591843px 0px rgba(0,0,0,1); }
+.shadow-29 { box-shadow: 0px 8.1397094727px 24.1176586151px 0px rgba(0,0,0,1); }
+.shadow-30 { box-shadow: 0px 13.5131835938px 40.0390625px 0px rgba(0,0,0,1); }
+.shadow-31 { box-shadow: 0px 27px 80px 0px rgba(0,0,0,1); }
+.shadow-32 { box-shadow: 0px 1.0238848925px 2.2138051987px 0px rgba(0,0,0,1); }
+.shadow-33 { box-shadow: 0px 2.460537672px 5.3200817108px 0px rgba(0,0,0,1); }
+.shadow-34 { box-shadow: 0px 4.6329741478px 10.017241478px 0px rgba(0,0,0,1); }
+.shadow-35 { box-shadow: 0px 8.2644338608px 17.8690471649px 0px rgba(0,0,0,1); }
+.shadow-36 { box-shadow: 0px 15.4577150345px 33.422088623px 0px rgba(0,0,0,1); }
+.shadow-37 { box-shadow: 0px 37px 80px 0px rgba(0,0,0,1); }
+.shadow-38 { box-shadow: 0px -2.7119114399px 2.2138051987px 0px rgba(0,0,0,1); }
+.shadow-39 { box-shadow: 0px -6.5170998573px 5.3200817108px 0px rgba(0,0,0,1); }
+.shadow-40 { box-shadow: 0px -12.2711210251px 10.017241478px 0px rgba(0,0,0,1); }
+.shadow-41 { box-shadow: 0px -21.8895835876px 17.8690471649px 0px rgba(0,0,0,1); }
+.shadow-42 { box-shadow: 0px -40.9420585632px 33.422088623px 0px rgba(0,0,0,1); }
+.shadow-43 { box-shadow: 0px -98px 80px 0px rgba(0,0,0,1); }
+.shadow-44 { box-shadow: 0px 2.7672564983px 2.2138051987px 0px rgba(0,0,0,1); }
+.shadow-45 { box-shadow: 0px 6.6501021385px 5.3200817108px 0px rgba(0,0,0,1); }
+.shadow-46 { box-shadow: 0px 22.336309433px 17.8690471649px 0px rgba(0,0,0,1); }
+.shadow-47 { box-shadow: 0px 41.7776107788px 33.422088623px 0px rgba(0,0,0,1); }
+.shadow-48 { box-shadow: 0px 1.5525377989px 1.8537764549px 0px rgba(0,0,0,1); }
+.shadow-49 { box-shadow: 0px 3.6097717285px 4.3101754189px 0px rgba(0,0,0,1); }
+.shadow-50 { box-shadow: 0px 6.482313633px 7.7400760651px 0px rgba(0,0,0,1); }
+.shadow-51 { box-shadow: 0px 10.7582397461px 12.845659256px 0px rgba(0,0,0,1); }
+.shadow-52 { box-shadow: 0px 17.7238368988px 21.1627902985px 0px rgba(0,0,0,1); }
+.shadow-53 { box-shadow: 0px 30.9761314392px 36.9864234924px 0px rgba(0,0,0,1); }
+.shadow-54 { box-shadow: 0px 67px 80px 0px rgba(0,0,0,1); }
+.shadow-55 { box-shadow: 0px 1.0427492857px 1.8537764549px 0px rgba(0,0,0,1); }
+.shadow-56 { box-shadow: 0px 2.4244735241px 4.3101754189px 0px rgba(0,0,0,1); }
+.shadow-57 { box-shadow: 0px 4.3537926674px 7.7400760651px 0px rgba(0,0,0,1); }
+.shadow-58 { box-shadow: 0px 7.2256836891px 12.845659256px 0px rgba(0,0,0,1); }
+.shadow-59 { box-shadow: 0px 11.9040699005px 21.1627902985px 0px rgba(0,0,0,1); }
+.shadow-60 { box-shadow: 0px 20.8048629761px 36.9864234924px 0px rgba(0,0,0,1); }
+.shadow-61 { box-shadow: 0px 45px 80px 0px rgba(0,0,0,1); }
+.shadow-62 { box-shadow: 0px 1.2512991428px 1.8537764549px 0px rgba(0,0,0,1); }
+.shadow-63 { box-shadow: 0px 2.9093682766px 4.3101754189px 0px rgba(0,0,0,1); }
+.shadow-64 { box-shadow: 0px 5.2245512009px 7.7400760651px 0px rgba(0,0,0,1); }
+.shadow-65 { box-shadow: 0px 8.6708202362px 12.845659256px 0px rgba(0,0,0,1); }
+.shadow-66 { box-shadow: 0px 14.2848834991px 21.1627902985px 0px rgba(0,0,0,1); }
+.shadow-67 { box-shadow: 0px 24.9658374786px 36.9864234924px 0px rgba(0,0,0,1); }
+.shadow-68 { box-shadow: 0px 54px 80px 0px rgba(0,0,0,1); }
+.shadow-69 { box-shadow: 0px -1.2557425499px 1.5945937634px 0px rgba(0,0,0,1); }
+.shadow-70 { box-shadow: 0px -2.8531439304px 3.6230399609px 0px rgba(0,0,0,1); }
+.shadow-71 { box-shadow: 0px -4.9657702446px 6.3057403564px 0px rgba(0,0,0,1); }
+.shadow-72 { box-shadow: 0px -7.8885774612px 10.017241478px 0px rgba(0,0,0,1); }
+.shadow-73 { box-shadow: 0px -12.1714897156px 15.4558591843px 0px rgba(0,0,0,1); }
+.shadow-74 { box-shadow: 0px -18.9926567078px 24.1176586151px 0px rgba(0,0,0,1); }
+.shadow-75 { box-shadow: 0px -31.5307636261px 40.0390625px 0px rgba(0,0,0,1); }
+.shadow-76 { box-shadow: 0px -63px 80px 0px rgba(0,0,0,1); }
+.shadow-77 { box-shadow: 0px 13px 25.5px 0px rgba(0,0,0,1); }
+
+/* Typography utilities (from typo_* with color if provided) */
+.typo-25 { font-family: var(--font-family-inter); font-size: 28px; font-weight: 900; line-height: 33.886364px; letter-spacing: 0; text-align: left; color: var(--color-ffffff); }
+.typo-26 { font-family: var(--font-family-inter); font-size: 24px; font-weight: 500; line-height: 29.045454px; letter-spacing: 0; text-align: left; color: var(--color-ffffff); }
+.typo-27 { font-family: var(--font-family-inter); font-size: 118px; font-weight: 600; line-height: 142.806808px; letter-spacing: 0; text-align: left; color: var(--color-ffffff); }
+.typo-28 { font-family: var(--font-family-inter); font-size: 23px; font-weight: 500; line-height: 27.835226px; letter-spacing: 0; text-align: left; color: var(--color-ffffff); }
+.typo-29 { font-family: var(--font-family-inter); font-size: 28px; font-weight: 400; line-height: 33.886364px; letter-spacing: 0; text-align: left; color: var(--color-ffffff); }
+.typo-30 { font-family: var(--font-family-inter); font-size: 28px; font-weight: 500; line-height: 33.886364px; letter-spacing: 0; text-align: left; color: var(--color-ffffff); }
+.typo-31 { font-family: var(--font-family-inter); font-size: 20px; font-weight: 400; line-height: 24.204544px; letter-spacing: 0; text-align: left; color: var(--color-ffffff); }
+.typo-32 { font-family: var(--font-family-inter); font-size: 38px; font-weight: 400; line-height: 45.988636px; letter-spacing: 0; text-align: left; color: var(--color-ffffff); }
+.typo-33 { font-family: var(--font-family-inter); font-size: 24px; font-weight: 400; line-height: 29.045454px; letter-spacing: 0; text-align: left; color: var(--color-ffffff); }
+.typo-34 { font-family: var(--font-family-inter); font-size: 23px; font-weight: 400; line-height: 27.835226px; letter-spacing: 0; text-align: left; color: var(--color-ffffff); }
+.typo-35 { font-family: var(--font-family-inter); font-size: 22px; font-weight: 400; line-height: 26.625px; letter-spacing: 0; text-align: left; color: var(--color-ffffff); }
+.typo-36 { font-family: var(--font-family-inter); font-size: 17px; font-weight: 400; line-height: 20.573864px; letter-spacing: 0; text-align: left; color: var(--color-ffffff); }
+.typo-37 { font-family: var(--font-family-inter); font-size: 55px; font-weight: 600; line-height: 66.5625px; letter-spacing: 0; text-align: left; color: var(--color-ffffff); }
+.typo-38 { font-family: var(--font-family-inter); font-size: 38px; font-weight: 600; line-height: 45.988636px; letter-spacing: 0; text-align: left; color: var(--color-ffffff); }
+.typo-39 { font-family: var(--font-family-inter); font-size: 20px; font-weight: 600; line-height: 24.204544px; letter-spacing: 0; text-align: left; color: var(--color-ffffff); }
+.typo-40 { font-family: var(--font-family-inter); font-size: 28px; font-weight: 600; line-height: 33.886364px; letter-spacing: 0; text-align: left; color: var(--color-ffffff); }
+.typo-41 { font-family: var(--font-family-inter); font-size: 58px; font-weight: 900; line-height: 70.193184px; letter-spacing: 0; text-align: left; color: var(--color-ffffff); }
+.typo-42 { font-family: var(--font-family-inter); font-size: 28px; font-weight: 800; line-height: 33.886364px; letter-spacing: 0; text-align: left; color: var(--color-ffffff); }
+.typo-43 { font-family: var(--font-family-inter); font-size: 22px; font-weight: 700; line-height: 26.625px; letter-spacing: 0; text-align: left; color: var(--color-000000); }
+.typo-44 { font-family: var(--font-family-inter); font-size: 20px; font-weight: 700; line-height: 24.204544px; letter-spacing: 0; text-align: left; color: var(--color-ffffff); }
+.typo-45 { font-family: var(--font-family-inter); font-size: 18px; font-weight: 600; line-height: 21.78409px; letter-spacing: 0; text-align: left; color: var(--color-ffffff); }
+.typo-46 { font-family: var(--font-family-inter); font-size: 24px; font-weight: 600; line-height: 29.045454px; letter-spacing: 0; text-align: left; color: var(--color-ffffff); }
+.typo-47 { font-family: var(--font-family-inter); font-size: 21px; font-weight: 400; line-height: 25.414772px; letter-spacing: 0; text-align: left; color: var(--color-ffffff); }
+.typo-48 { font-family: var(--font-family-inter); font-size: 38px; font-weight: 900; line-height: 45.988636px; letter-spacing: 0; text-align: left; color: var(--color-ffffff); }
+.typo-49 { font-family: var(--font-family-inter); font-size: 20px; font-weight: 600; line-height: 24.204544px; letter-spacing: 0; text-align: left; color: var(--color-000000); }
+.typo-50 { font-family: var(--font-family-inter); font-size: 23px; font-weight: 600; line-height: 27.835226px; letter-spacing: 0; text-align: left; color: var(--color-ffffff); }
+
+/* Generic element resets for pixel rendering fidelity */
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-ffffff);
+}
